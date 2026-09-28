@@ -31,14 +31,14 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Authentication
 
-- [ ] **AUTH-01**: Admin can log in with email + password via POST `/api/auth/login` → JWT in httpOnly, SameSite=Strict, Secure cookie
-- [ ] **AUTH-02**: Invalid credentials return generic 401 (no user enumeration)
-- [ ] **AUTH-03**: GET `/api/auth/me` returns current user profile when authenticated
-- [ ] **AUTH-04**: POST `/api/auth/logout` clears session/token
-- [ ] **AUTH-05**: Spring Security config: public routes open, `/api/admin/*` requires authentication
-- [ ] **AUTH-06**: JWT expiry enforced (604800s = 7 days), token validation on protected routes
-- [ ] **AUTH-07**: Rate limiting on `/api/auth/login`: max 10 requests per 15 min per IP
-- [ ] **AUTH-08**: CORS restricted to CLIENT_ORIGIN environment variable
+- [x] **AUTH-01**: Admin can log in with email + password via POST `/api/auth/login` → JWT in httpOnly, SameSite=Strict, Secure cookie
+- [x] **AUTH-02**: Invalid credentials return generic 401 (no user enumeration)
+- [x] **AUTH-03**: GET `/api/auth/me` returns current user profile when authenticated
+- [x] **AUTH-04**: POST `/api/auth/logout` clears session/token
+- [x] **AUTH-05**: Spring Security config: public routes open, `/api/admin/*` requires authentication
+- [x] **AUTH-06**: JWT expiry enforced (604800s = 7 days), token validation on protected routes
+- [x] **AUTH-07**: Rate limiting on `/api/auth/login`: max 10 requests per 15 min per IP
+- [x] **AUTH-08**: CORS restricted to CLIENT_ORIGIN environment variable
 
 ### Public API
 
@@ -265,17 +265,17 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-07 | Phase 2 | Complete |
 | DATA-08 | Phase 2 | Complete |
 | DATA-09 | Phase 2 | Complete |
-| AUTH-01 | Phase 3 | Pending |
-| AUTH-02 | Phase 3 | Pending |
-| AUTH-03 | Phase 3 | Pending |
-| AUTH-04 | Phase 3 | Pending |
-| AUTH-05 | Phase 3 | Pending |
-| AUTH-06 | Phase 3 | Pending |
-| AUTH-07 | Phase 3 | Pending |
-| AUTH-08 | Phase 3 | Pending |
-| SEC-01 | Phase 3 | Pending |
-| SEC-02 | Phase 3 | Pending |
-| SEC-04 | Phase 3 | Pending |
+| AUTH-01 | Phase 3 | Complete |
+| AUTH-02 | Phase 3 | Complete |
+| AUTH-03 | Phase 3 | Complete |
+| AUTH-04 | Phase 3 | Complete |
+| AUTH-05 | Phase 3 | Complete |
+| AUTH-06 | Phase 3 | Complete |
+| AUTH-07 | Phase 3 | Complete |
+| AUTH-08 | Phase 3 | Complete |
+| SEC-01 | Phase 3 | Complete |
+| SEC-02 | Phase 3 | Complete |
+| SEC-04 | Phase 3 | Complete |
 | API-01 | Phase 4 | Pending |
 | API-02 | Phase 4 | Pending |
 | API-03 | Phase 4 | Pending |
