@@ -19,15 +19,15 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Data Models
 
-- [ ] **DATA-01**: Service document model with slug, name, tagline, icon, heroImage, description, offerings[], process[], faqs[], isFeaturedOnHome, order, seo, timestamps
-- [ ] **DATA-02**: BlogPost document model with slug, title, excerpt, content, coverImage, author, tags[], status (DRAFT/PUBLISHED), publishedAt, readTimeMin (auto-computed), seo, timestamps
-- [ ] **DATA-03**: SuccessStory document model with slug, clientName, serviceRef, summary, fullStory, image, outcome, status (DRAFT/PUBLISHED), featured, timestamps
-- [ ] **DATA-04**: Inquiry document model with name, email, phone, serviceRef, serviceLabel, message, status (NEW/READ/ARCHIVED), source, ipHash, userAgent, notifiedAt, timestamps; compound index {status, createdAt}
-- [ ] **DATA-05**: AdminUser document model with name, email, passwordHash (bcrypt 12, never serialized), role (CONTENT_ADMIN/SUPER_ADMIN), isActive, lastLoginAt, timestamps
-- [ ] **DATA-06**: PageContent document model with slug, title, blocks[], seo, timestamps
-- [ ] **DATA-07**: SiteSettings singleton document with companyName, primaryEmail, phone, address, mapEmbedUrl, socials map, departmentEmails[], timestamps
-- [ ] **DATA-08**: All indices created: unique on slugs/emails, compound index on Inquiry {status, createdAt}, index on Service.order, BlogPost {status, publishedAt}
-- [ ] **DATA-09**: Idempotent seed scripts for services (5), admin user, pages (about-us, privacy-policy, terms), demo data
+- [x] **DATA-01**: Service document model with slug, name, tagline, icon, heroImage, description, offerings[], process[], faqs[], isFeaturedOnHome, order, seo, timestamps
+- [x] **DATA-02**: BlogPost document model with slug, title, excerpt, content, coverImage, author, tags[], status (DRAFT/PUBLISHED), publishedAt, readTimeMin (auto-computed), seo, timestamps
+- [x] **DATA-03**: SuccessStory document model with slug, clientName, serviceRef, summary, fullStory, image, outcome, status (DRAFT/PUBLISHED), featured, timestamps
+- [x] **DATA-04**: Inquiry document model with name, email, phone, serviceRef, serviceLabel, message, status (NEW/READ/ARCHIVED), source, ipHash, userAgent, notifiedAt, timestamps; compound index {status, createdAt}
+- [x] **DATA-05**: AdminUser document model with name, email, passwordHash (bcrypt 12, never serialized), role (CONTENT_ADMIN/SUPER_ADMIN), isActive, lastLoginAt, timestamps
+- [x] **DATA-06**: PageContent document model with slug, title, blocks[], seo, timestamps
+- [x] **DATA-07**: SiteSettings singleton document with companyName, primaryEmail, phone, address, mapEmbedUrl, socials map, departmentEmails[], timestamps
+- [x] **DATA-08**: All indices created: unique on slugs/emails, compound index on Inquiry {status, createdAt}, index on Service.order, BlogPost {status, publishedAt}
+- [x] **DATA-09**: Idempotent seed scripts for services (5), admin user, pages (about-us, privacy-policy, terms), demo data
 
 ### Authentication
 
@@ -256,15 +256,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-05 | Phase 1 | Complete |
 | FOUND-06 | Phase 1 | Complete |
 | FOUND-07 | Phase 1 | Complete |
-| DATA-01 | Phase 2 | Pending |
-| DATA-02 | Phase 2 | Pending |
-| DATA-03 | Phase 2 | Pending |
-| DATA-04 | Phase 2 | Pending |
-| DATA-05 | Phase 2 | Pending |
-| DATA-06 | Phase 2 | Pending |
-| DATA-07 | Phase 2 | Pending |
-| DATA-08 | Phase 2 | Pending |
-| DATA-09 | Phase 2 | Pending |
+| DATA-01 | Phase 2 | Complete |
+| DATA-02 | Phase 2 | Complete |
+| DATA-03 | Phase 2 | Complete |
+| DATA-04 | Phase 2 | Complete |
+| DATA-05 | Phase 2 | Complete |
+| DATA-06 | Phase 2 | Complete |
+| DATA-07 | Phase 2 | Complete |
+| DATA-08 | Phase 2 | Complete |
+| DATA-09 | Phase 2 | Complete |
 | AUTH-01 | Phase 3 | Pending |
 | AUTH-02 | Phase 3 | Pending |
 | AUTH-03 | Phase 3 | Pending |
