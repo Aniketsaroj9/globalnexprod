@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-ink: 21 34 56;       /* #152238 */
+    --color-ink-2: 51 68 95;     /* #33445F */
+    --color-ink-3: 107 122 146;  /* #6B7A92 */
+    --color-bond: 237 239 232;   /* #EDEFE8 */
+    --color-paper: 245 246 241;  /* #F5F6F1 */
+    --color-field: 221 226 218;  /* #DDE2DA */
+    --color-rule: 195 200 188;   /* #C3C8BC */
+    --color-seal: 176 51 43;     /* #B0332B */
+    --color-brass: 168 132 60;   /* #A8843C */
+    --color-veridian: 31 93 76;  /* #1F5D4C */
+  }
+
+  .dark {
+    --color-ink: 231 234 226;    /* #E7EAE2 */
+    --color-ink-2: 176 185 198;  /* #B0B9C6 */
+    --color-ink-3: 120 134 154;  /* #78869A */
+    --color-bond: 14 23 37;      /* #0E1725 */
+    --color-paper: 20 31 48;     /* #141F30 */
+    --color-field: 27 39 58;     /* #1B273A */
+    --color-rule: 42 54 72;      /* #2A3648 */
+    --color-seal: 212 72 62;     /* Lifted oxblood for dark contrast */
+    --color-brass: 204 163 79;   /* Lifted brass */
+    --color-veridian: 46 138 113;/* Lifted veridian */
+  }
+
+  html {
+    font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #EDEFE8;
+    color: #152238;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dark body {
+    background-color: #0E1725;
+    color: #E7EAE2;
+  }
+}
+
+/* Endorsement Component Styles */
+@layer components {
+  /* Ruled Field Inputs per PRD §4: single 1.5px baseline rule, no box */
+  .ruled-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid #C3C8BC;
+    border-radius: 0px;
+    padding: 0.5rem 0.25rem;
+    font-family: 'Public Sans', sans-serif;
+    color: #152238;
+    transition: all 150ms ease-in-out;
+    outline: none;
+  }
+
+  .ruled-input:focus {
+    border-bottom-color: #B0332B;
+    background-color: #DDE2DA;
+    outline: none;
+  }
+
+  .dark .ruled-input {
+    border-bottom-color: #2A3648;
+    color: #E7EAE2;
+  }
+
+  .dark .ruled-input:focus {
+    border-bottom-color: #D4483E;
+    background-color: #1B273A;
+  }
+
+  /* Primary Button per PRD §4: 2px radius, solid ink, hover translate -1px with oxblood offset */
+  .btn-endorsement-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #152238;
+    color: #F5F6F1;
+    border: 1.5px solid #152238;
+    border-radius: 2px;
+    padding: 0.625rem 1.25rem;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+  }
+
+  .btn-endorsement-primary:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #B0332B;
+  }
+
+  .btn-endorsement-primary:active {
+    transform: translate(0px, 0px);
+    box-shadow: 1px 1px 0px #B0332B;
+  }
+
+  .dark .btn-endorsement-primary {
+    background-color: #E7EAE2;
+    color: #0E1725;
+    border-color: #E7EAE2;
+  }
+
+  .dark .btn-endorsement-primary:hover {
+    box-shadow: 3px 3px 0px #D4483E;
+  }
+
+  /* Secondary Button: Outlined Rule Button */
+  .btn-endorsement-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #152238;
+    border: 1.5px solid #C3C8BC;
+    border-radius: 2px;
+    padding: 0.625rem 1.25rem;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: all 120ms ease;
+  }
+
+  .btn-endorsement-secondary:hover {
+    background-color: #DDE2DA;
+    border-color: #152238;
+  }
+
+  .dark .btn-endorsement-secondary {
+    color: #E7EAE2;
+    border-color: #2A3648;
+  }
+
+  .dark .btn-endorsement-secondary:hover {
+    background-color: #1B273A;
+    border-color: #E7EAE2;
+  }
+
+  /* Ledger Row per PRD §4: entry number in brass, hover fills with field color */
+  .ledger-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C3C8BC;
+    padding: 1rem 0.75rem;
+    transition: background-color 150ms ease;
+  }
+
+  .ledger-row:hover {
+    background-color: #DDE2DA;
+  }
+
+  .dark .ledger-row {
+    border-bottom-color: #2A3648;
+  }
+
+  .dark .ledger-row:hover {
+    background-color: #1B273A;
+  }
+
+  /* Official Stamped Seal Badge */
+  .stamp-badge {
+    display: inline-block;
+    border: 2px solid #B0332B;
+    border-radius: 2px;
+    padding: 0.2rem 0.5rem;
+    color: #B0332B;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .dark .stamp-badge {
+    border-color: #D4483E;
+    color: #D4483E;
+  }
+
+  /* Document Rail Layout */
+  .doc-rail {
+    width: 64px;
+    border-right: 1px solid #C3C8BC;
+    flex-shrink: 0;
+  }
+
+  .dark .doc-rail {
+    border-right-color: #2A3648;
+  }
+}

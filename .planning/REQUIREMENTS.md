@@ -9,13 +9,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Foundation
 
-- [ ] **FOUND-01**: Spring Boot 3.2 project scaffolded with Maven, MongoDB driver, Spring Security, Spring Mail, JJWT, Lombok, OWASP HTML Sanitizer
-- [ ] **FOUND-02**: React 18 project scaffolded with Vite, React Router v6, Axios, Tailwind CSS v3, React Helmet Async, Lucide React
-- [ ] **FOUND-03**: Endorsement design tokens configured in Tailwind (ink/bond/paper/field/rule/seal/brass/veridian palette, Fraunces/Public Sans/Courier Prime fonts)
-- [ ] **FOUND-04**: MongoDB Atlas M0 cluster (ap-south-1) provisioned and connected from Spring Boot
-- [ ] **FOUND-05**: `/api/health` endpoint returns `{status:'ok', uptime, db:'connected'}`
-- [ ] **FOUND-06**: ESLint + Prettier configured, git initialized, `.env.example` committed
-- [ ] **FOUND-07**: Dark mode tokens configured (background #0E1725, surfaces #141F30, type #E7EAE2)
+- [x] **FOUND-01**: Spring Boot 3.2 project scaffolded with Maven, MongoDB driver, Spring Security, Spring Mail, JJWT, Lombok, OWASP HTML Sanitizer
+- [x] **FOUND-02**: React 18 project scaffolded with Vite, React Router v6, Axios, Tailwind CSS v3, React Helmet Async, Lucide React
+- [x] **FOUND-03**: Endorsement design tokens configured in Tailwind (ink/bond/paper/field/rule/seal/brass/veridian palette, Fraunces/Public Sans/Courier Prime fonts)
+- [x] **FOUND-04**: MongoDB Atlas M0 cluster (ap-south-1) provisioned and connected from Spring Boot
+- [x] **FOUND-05**: `/api/health` endpoint returns `{status:'ok', uptime, db:'connected'}`
+- [x] **FOUND-06**: ESLint + Prettier configured, git initialized, `.env.example` committed
+- [x] **FOUND-07**: Dark mode tokens configured (background #0E1725, surfaces #141F30, type #E7EAE2)
 
 ### Data Models
 
@@ -249,13 +249,150 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated during roadmap creation) | | |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
+| FOUND-04 | Phase 1 | Complete |
+| FOUND-05 | Phase 1 | Complete |
+| FOUND-06 | Phase 1 | Complete |
+| FOUND-07 | Phase 1 | Complete |
+| DATA-01 | Phase 2 | Pending |
+| DATA-02 | Phase 2 | Pending |
+| DATA-03 | Phase 2 | Pending |
+| DATA-04 | Phase 2 | Pending |
+| DATA-05 | Phase 2 | Pending |
+| DATA-06 | Phase 2 | Pending |
+| DATA-07 | Phase 2 | Pending |
+| DATA-08 | Phase 2 | Pending |
+| DATA-09 | Phase 2 | Pending |
+| AUTH-01 | Phase 3 | Pending |
+| AUTH-02 | Phase 3 | Pending |
+| AUTH-03 | Phase 3 | Pending |
+| AUTH-04 | Phase 3 | Pending |
+| AUTH-05 | Phase 3 | Pending |
+| AUTH-06 | Phase 3 | Pending |
+| AUTH-07 | Phase 3 | Pending |
+| AUTH-08 | Phase 3 | Pending |
+| SEC-01 | Phase 3 | Pending |
+| SEC-02 | Phase 3 | Pending |
+| SEC-04 | Phase 3 | Pending |
+| API-01 | Phase 4 | Pending |
+| API-02 | Phase 4 | Pending |
+| API-03 | Phase 4 | Pending |
+| API-04 | Phase 4 | Pending |
+| API-05 | Phase 4 | Pending |
+| API-06 | Phase 4 | Pending |
+| API-07 | Phase 4 | Pending |
+| API-08 | Phase 4 | Pending |
+| API-09 | Phase 4 | Pending |
+| API-10 | Phase 4 | Pending |
+| API-11 | Phase 4 | Pending |
+| API-12 | Phase 4 | Pending |
+| ADMIN-01 | Phase 4 | Pending |
+| ADMIN-02 | Phase 4 | Pending |
+| ADMIN-03 | Phase 4 | Pending |
+| ADMIN-04 | Phase 4 | Pending |
+| ADMIN-05 | Phase 4 | Pending |
+| ADMIN-06 | Phase 4 | Pending |
+| ADMIN-07 | Phase 4 | Pending |
+| ADMIN-08 | Phase 4 | Pending |
+| ADMIN-09 | Phase 4 | Pending |
+| ADMIN-10 | Phase 4 | Pending |
+| ADMIN-11 | Phase 4 | Pending |
+| ADMIN-12 | Phase 4 | Pending |
+| ADMIN-13 | Phase 4 | Pending |
+| ADMIN-14 | Phase 4 | Pending |
+| ADMIN-15 | Phase 4 | Pending |
+| MAIL-01 | Phase 5 | Pending |
+| MAIL-02 | Phase 5 | Pending |
+| MAIL-03 | Phase 5 | Pending |
+| MAIL-04 | Phase 5 | Pending |
+| MAIL-05 | Phase 5 | Pending |
+| SHELL-01 | Phase 6 | Pending |
+| SHELL-02 | Phase 6 | Pending |
+| SHELL-03 | Phase 6 | Pending |
+| SHELL-04 | Phase 6 | Pending |
+| SHELL-05 | Phase 6 | Pending |
+| SHELL-06 | Phase 6 | Pending |
+| SHELL-07 | Phase 6 | Pending |
+| SHELL-08 | Phase 6 | Pending |
+| HOME-01 | Phase 7 | Pending |
+| HOME-02 | Phase 7 | Pending |
+| HOME-03 | Phase 7 | Pending |
+| HOME-04 | Phase 7 | Pending |
+| HOME-05 | Phase 7 | Pending |
+| HOME-06 | Phase 7 | Pending |
+| HOME-07 | Phase 7 | Pending |
+| HOME-08 | Phase 7 | Pending |
+| ABOUT-01 | Phase 7 | Pending |
+| ABOUT-02 | Phase 7 | Pending |
+| ABOUT-03 | Phase 7 | Pending |
+| SERV-01 | Phase 7 | Pending |
+| SERV-02 | Phase 7 | Pending |
+| SERV-03 | Phase 7 | Pending |
+| SERV-04 | Phase 7 | Pending |
+| SERV-05 | Phase 7 | Pending |
+| SERV-06 | Phase 7 | Pending |
+| SERV-07 | Phase 7 | Pending |
+| STORY-01 | Phase 7 | Pending |
+| STORY-02 | Phase 7 | Pending |
+| STORY-03 | Phase 7 | Pending |
+| STORY-04 | Phase 7 | Pending |
+| BLOG-01 | Phase 7 | Pending |
+| BLOG-02 | Phase 7 | Pending |
+| BLOG-03 | Phase 7 | Pending |
+| BLOG-04 | Phase 7 | Pending |
+| CONT-01 | Phase 7 | Pending |
+| CONT-02 | Phase 7 | Pending |
+| CONT-03 | Phase 7 | Pending |
+| CONT-04 | Phase 7 | Pending |
+| CONT-05 | Phase 7 | Pending |
+| CONT-06 | Phase 7 | Pending |
+| CONT-07 | Phase 7 | Pending |
+| CONT-08 | Phase 7 | Pending |
+| LEGAL-01 | Phase 7 | Pending |
+| LEGAL-02 | Phase 7 | Pending |
+| LEGAL-03 | Phase 7 | Pending |
+| APANEL-01 | Phase 8 | Pending |
+| APANEL-02 | Phase 8 | Pending |
+| APANEL-03 | Phase 8 | Pending |
+| APANEL-04 | Phase 8 | Pending |
+| APANEL-05 | Phase 8 | Pending |
+| APANEL-06 | Phase 8 | Pending |
+| APANEL-07 | Phase 8 | Pending |
+| SEO-01 | Phase 9 | Pending |
+| SEO-02 | Phase 9 | Pending |
+| SEO-03 | Phase 9 | Pending |
+| SEO-04 | Phase 9 | Pending |
+| SEO-05 | Phase 9 | Pending |
+| SEO-06 | Phase 9 | Pending |
+| PERF-01 | Phase 9 | Pending |
+| PERF-02 | Phase 9 | Pending |
+| PERF-03 | Phase 9 | Pending |
+| PERF-04 | Phase 9 | Pending |
+| PERF-05 | Phase 9 | Pending |
+| SEC-03 | Phase 9 | Pending |
+| SEC-05 | Phase 9 | Pending |
+| TEST-01 | Phase 10 | Pending |
+| TEST-02 | Phase 10 | Pending |
+| TEST-03 | Phase 10 | Pending |
+| TEST-04 | Phase 10 | Pending |
+| TEST-05 | Phase 10 | Pending |
+| TEST-06 | Phase 10 | Pending |
+| TEST-07 | Phase 10 | Pending |
+| DEPLOY-01 | Phase 10 | Pending |
+| DEPLOY-02 | Phase 10 | Pending |
+| DEPLOY-03 | Phase 10 | Pending |
+| DEPLOY-04 | Phase 10 | Pending |
+| DEPLOY-05 | Phase 10 | Pending |
+| DEPLOY-06 | Phase 10 | Pending |
+| DEPLOY-07 | Phase 10 | Pending |
 
 **Coverage:**
 - v1 requirements: 95 total
-- Mapped to phases: 0
-- Unmapped: 95 ⚠️
+- Mapped to phases: 95
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-09-27*
-*Last updated: 2026-09-27 after initial definition*
+*Last updated: 2026-09-27 after roadmap creation*

@@ -1,0 +1,45 @@
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: smartconnect-api
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/globalnex}
+      auto-index-creation: true
+  mail:
+    host: ${SMTP_HOST:smtp.mailtrap.io}
+    port: ${SMTP_PORT:587}
+    username: ${SMTP_USERNAME:}
+    password: ${SMTP_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:smartconnect_default_secret_key_at_least_32_bytes_long_123456_super_secure}
+    expiration-ms: ${JWT_EXPIRATION_MS:604800000} # 7 days (604800s)
+    cookie-name: ${JWT_COOKIE_NAME:token}
+  client:
+    origin: ${CLIENT_ORIGIN:http://localhost:5173}
+  company:
+    name: "Bhargesh Patel GlobalNex Private Limited"
+    primary-email: "info@bhargeshglobalnex.com"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics"
+  endpoint:
+    health:
+      show-details: always

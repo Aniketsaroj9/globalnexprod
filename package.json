@@ -1,0 +1,24 @@
+{
+  "name": "smartconnect-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SmartConnect — Bhargesh Patel GlobalNex Private Limited Workspace",
+  "scripts": {
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "lint:client": "npm --prefix client run lint",
+    "test:client": "npm --prefix client run test",
+    "install:client": "npm --prefix client install",
+    "dev": "npm --prefix client run dev",
+    "build": "npm --prefix client run build"
+  },
+  "keywords": [
+    "globalnex",
+    "smartconnect",
+    "spring-boot",
+    "react",
+    "vite"
+  ],
+  "author": "Bhargesh Patel GlobalNex Private Limited",
+  "license": "UNLICENSED"
+}

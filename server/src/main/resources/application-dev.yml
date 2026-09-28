@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+logging:
+  level:
+    root: INFO
+    com.globalnex: DEBUG
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
