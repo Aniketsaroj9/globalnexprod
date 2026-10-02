@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-09-27)
 
 **Core value:** Prospective clients can discover GlobalNex's five service lines, understand what each offers, and submit an inquiry that routes to the correct department — all from a fast, professional, mobile-first website.
-**Current focus:** Phase 4 — Public & Admin REST APIs
+**Current focus:** Phase 5 — Email Notifications
 
 ## Current Milestone
 
@@ -18,7 +18,7 @@ See: .planning/PROJECT.md (updated 2026-09-27)
 | 1 | Project Foundation & Scaffold | complete |
 | 2 | Data Models & Seed Scripts | complete |
 | 3 | Authentication & Security | complete |
-| 4 | Public & Admin REST APIs | not started |
+| 4 | Public & Admin REST APIs | complete |
 | 5 | Email Notifications | not started |
 | 6 | Frontend Shell & Common Components | not started |
 | 7 | Public Pages | not started |
