@@ -26,6 +26,7 @@ public class InquiryService {
 
     private final InquiryRepository inquiryRepository;
     private final InquiryRateLimiter rateLimiter;
+    private final EmailService emailService;
 
     public Inquiry submitInquiry(InquiryCreateRequest request, HttpServletRequest httpRequest) {
         String clientIp = extractClientIp(httpRequest);
@@ -60,6 +61,14 @@ public class InquiryService {
 
         Inquiry saved = inquiryRepository.save(inquiry);
         log.info("New inquiry submitted [ID: {}] for service '{}'", saved.getId(), saved.getServiceLabel());
+
+        // Asynchronously trigger email notification (fire-and-forget)
+        try {
+            emailService.sendInquiryNotificationAsync(saved);
+        } catch (Exception e) {
+            log.error("Error dispatching async email notification for inquiry {}: {}", saved.getId(), e.getMessage());
+        }
+
         return saved;
     }
 
